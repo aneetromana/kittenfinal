@@ -7,6 +7,7 @@ background-color:#FFD7F1;
 border-radius:  5px;
 font-size:30px;
 color: white;
+border: none;
 `;
 const Start = () => {
     return <div>
