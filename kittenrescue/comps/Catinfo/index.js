@@ -21,7 +21,7 @@ const Catinfo = () => {
         Age: Approx 2 years 
 Dislikes: Small Spaces 
 Likes: Independance 
-Medical Concerns: None   
+Medical Concerns: None  
 
         </CatinfoInput>
     </div>
