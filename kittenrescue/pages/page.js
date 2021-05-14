@@ -1,23 +1,36 @@
 import Header1 from '../comps/Header';
-import Catinfo from '../comps/Catinfo';
+import Button1 from '../comps/Button1';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
 .header {
   display:flex;
-  just
+  justify-content:left;
+}
+
+.right {
+  display:flex;
+  margin-top:70px;
+}
+
+.background {
+  z-index:-1;
+  width:400px;
+  height:660px;
+  background-color:#DAFFD7;
+  margin-top:-180px;
 }
 `;
 
 export default function Home() {
   return <HomeCont>
-    <div className="header"></div>
-    <div className="bottom">
-    <div className="left"></div>
-    <div className="right"></div>
-    </div>
+    <div className="header"><Header1 /></div>
+    <div className="left">What kind of cat are you looking for?</div>
+    <div className="right"><Button1 /></div>
+    <div className="background"> </div>
+ 
 
-    <Header1 />
-      <Catinfo />
+    
+      
   </HomeCont>
 }
