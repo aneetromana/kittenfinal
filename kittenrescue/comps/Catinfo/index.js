@@ -9,7 +9,7 @@ font-size:20px;
 color: black;
 border: none;
 width: 300px;
-height: 200px;
+height: 100px;
 `;
 const Catinfo = () => {
     return <div>

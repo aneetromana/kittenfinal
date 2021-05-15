@@ -24,6 +24,7 @@ const HomeCont = styled.div`
 
 `;
 
+
 export default function Home() {
   return <HomeCont>
   

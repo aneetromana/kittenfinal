@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 
 const StartInput = styled.button`
@@ -8,17 +9,22 @@ border-radius:  5px;
 font-size:30px;
 color: white;
 border: none;
+
 `;
-const Start = () => {
-    return <div>
-        {/*<button style={{
-       backgroundColor:"#FFD7F1",
-       color:"#FFF"
-        }}> Start</button>*/}
-        <StartInput>
-            Start
-        </StartInput>
-    </div>
+const Start = ({
+}) => {
+    const router = useRouter();
+    return <StartInput onClick={()=>router.push("/page")}>
+    Start
+</StartInput>
+    {/*<button style={{
+   backgroundColor:"#FFD7F1",
+   color:"#FFF"
+    }}> Start</button>*/}
+    
+
 }
+   
+
 
 export default Start;

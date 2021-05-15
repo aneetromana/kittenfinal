@@ -1,6 +1,7 @@
 import Header1 from '../comps/Header';
 import Catinfo from '../comps/Catinfo';
 import Pictures from '../comps/Pictures';
+import Startover from '../comps/Startover';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
@@ -13,16 +14,12 @@ const HomeCont = styled.div`
   display:flex;
   margin-top:30px;
 }
-.right {
-  display:flex;
-  margin-top:30px;
-}
 .background {
-  z-index:-1;
+  z-index:-2;
   width:400px;
-  height:660px;
+  height:750px;
   background-color:#DAFFD7;
-  margin-top:-580px;
+  margin-top:-650px;
 }
 `;
 
@@ -32,7 +29,9 @@ export default function Home() {
     <div className="bottom">
     <div className="left"><Pictures/></div>
     <div className="right"><Catinfo /></div>
+    <Startover></Startover>
     <div className="background"> </div>
+  
     </div>
 
     
