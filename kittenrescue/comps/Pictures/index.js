@@ -8,7 +8,7 @@ const PicturesCont = styled.div`
    max-width: 600px;
    height: 340px;
    width: 300px;
-   border: 1px solid black;
+   border: 2px solid pink;
    &>* {
        color:#000000;
    }
@@ -21,16 +21,16 @@ const PicturesCont = styled.div`
  
 const Pictures = ({
    subtext="Luna.",
-   bgcolor="#"
+   bgcolor="#FFD7F1",
 }) => {
  
     function Pictures({
-        url="https://cdn130.picsart.com/280413913011211.png?type=webp&to=min&r=640"
+        url="https://i.redd.it/2ci0qavph5h11.jpg"
     }){
         return <div>
         <img style ={{
-            width:250,
-            height:400,
+            width:240,
+            height:340,
             objectFit:"cover"
         } } src ={url} />
     </div>

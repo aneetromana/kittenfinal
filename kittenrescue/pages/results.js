@@ -26,13 +26,11 @@ const HomeCont = styled.div`
 export default function Home() {
   return <HomeCont>
     <div className="header"><Header1 /></div>
-    <div className="bottom">
     <div className="left"><Pictures/></div>
     <div className="right"><Catinfo /></div>
     <Startover></Startover>
     <div className="background"> </div>
   
-    </div>
 
     
       
