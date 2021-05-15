@@ -3,8 +3,8 @@ function HomepageUI({
 }){
     return <div>
     <img style ={{
-        width:200,
-        height:200,
+        width:250,
+        height:400,
         objectFit:"cover"
     } } src ={url} />
 </div>
