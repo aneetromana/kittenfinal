@@ -4,7 +4,7 @@ import Menubutton from '../comps/Menubutton';
 
 
 export default {
-    title:"My Menu Button",
+    title:"MyMenu Button",
     component:<Menubutton  />
 }
 
