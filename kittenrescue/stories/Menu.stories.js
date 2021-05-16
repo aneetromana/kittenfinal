@@ -6,4 +6,4 @@ export default {
     component:<Menu />
 }
 
-export const DefaultMenu = () => <Button />
+export const DefaultMenu = () => <Menu />
