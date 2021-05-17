@@ -1,12 +1,11 @@
 import React from 'react';
-import Menubutton from '../comps/Menubutton';
+import MenuButton from '../comps/Menubutton';
 
 
 
 export default {
-    title:"MyMenu Button",
-    component:<Menubutton  />
+    title:"MButton1",
+    component:<MenuButton />
 }
 
-export const MyMenuButton = () => <Menubutton  />
-
+export const MenuButton1 = () => <MenuButton />
