@@ -8,4 +8,4 @@ export default {
     component:<Pictures2 />
 }
 
-export const MyPictures = () => <Pictures2 />
+export const MyPictures2 = () => <Pictures2 />

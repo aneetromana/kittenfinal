@@ -14,7 +14,7 @@ border: none;
 const MenuButton = ({
 }) => {
     const router = useRouter();
-    return <MenuInput onClick={()=>router.push("/results")}>
+    return <MenuInput onClick={()=>router.push("/homepage")}>
     Menu
 </MenuInput>
     {/*<button style={{

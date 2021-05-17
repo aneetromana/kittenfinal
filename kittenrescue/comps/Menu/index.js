@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Button from '../Menubutton';
 import {FiMenu, FiVolumeX} from 'react-icons/fi';
 import React, {useState} from 'react';
+import {useRouter} from 'next/router';
 
 const MenuCont = styled.div`
 `
@@ -13,7 +14,7 @@ flex-direction:column;
 max-width:${props=>props.width}px;
 max-height:${props=>props.width}pxpx;
 overflow:hidden;
-transition:max-width 0.5s, max-height:0.5s;
+transition:max-width 0.5s, max-height 0.5s;
 `;
 
 const Menu = ({
@@ -25,15 +26,17 @@ const Menu = ({
         width=120;
         height=100;
     }
+    const router = useRouter();
     return <MenuCont>
        <MenuIcon onClick={()=>setOpen(!open)}>
        <FiMenu/>
        </MenuIcon>
         <MenuItems width={width} height={height}>
-        <Button
+        <Button onClick={()=>router.push("/homepage")}>
         text="open me"
         bgcolor="blue" 
         />
+        </Button>
         <Button
         text="open me"
         bgcolor="blue"
@@ -43,3 +46,5 @@ const Menu = ({
 }
 
 export default Menu;
+
+
