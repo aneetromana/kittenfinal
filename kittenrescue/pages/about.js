@@ -1,6 +1,5 @@
 import Header1 from '../comps/Header';
 import About from '../comps/About';
-import Menu from '../comps/Menu';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
@@ -26,7 +25,7 @@ const HomeCont = styled.div`
 
 export default function Home() {
   return <HomeCont>
-    <div className="header"><Menu></Menu><Header1 /></div>
+    <div className="header"><Header1 /></div>
     <div className="right"><About /></div>
     <div className="background"> </div>
  

@@ -59,14 +59,14 @@ const MenuButton = ({
     
     return <MenuInput>
         Gallery
-<MenuInput1 onClick={()=>router.push("/results")}>
+<MenuInput1 onClick={()=>router.push("/results2")}>
 Claud <Image>
-<img src="https://i.redd.it/2ci0qavph5h11.jpg" width="100" height="100"></img>
+<img src="https://spcabc.b-cdn.net/wp-content/uploads/news-kitten-tabby-carrier-e1590014634322-825x756.jpg" width="100" height="100"></img>
     </Image> 
 </MenuInput1>
- <MenuInput2 onClick={()=>router.push("/results2")}>
+ <MenuInput2 onClick={()=>router.push("/results")}>
 Luna <Image>
-<img src="https://spcabc.b-cdn.net/wp-content/uploads/news-kitten-tabby-carrier-e1590014634322-825x756.jpg" width="100" height="100"></img>
+<img src=" https://i.redd.it/2ci0qavph5h11.jpg" width="100" height="100"></img>
     </Image> 
  </MenuInput2 >
 

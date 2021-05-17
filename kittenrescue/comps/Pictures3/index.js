@@ -22,6 +22,7 @@ const PicturesCont = styled.div`
 const Pictures3 = ({
    subtext="Fern.",
    bgcolor="#FFD7F1",
+   bigtext="Male",
 }) => {
  
     function Pictures({
@@ -36,7 +37,7 @@ const Pictures3 = ({
     </div>
     }
    return <PicturesCont bg={bgcolor}>
-       <Pictures></Pictures>
+       <Pictures>{bigtext}</Pictures>
    
        <PicturesText>{subtext}</PicturesText>
    </PicturesCont>

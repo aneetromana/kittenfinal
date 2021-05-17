@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Header from '../comps/Header';
-import Menu from '../comps/Menu';
 import Gallery from '../comps/Gallery';
+import Filter from '../comps/Filterbutton';
 
 
 
@@ -9,7 +9,7 @@ const HomeCont = styled.div`
 .main {
     background-color:#FFE3F6;
     width:300px;
-    height:600px;
+    height:700px;
     border-style: solid;
     border-width: 5px;
     border-color: rgb(177, 255, 229);
@@ -27,11 +27,7 @@ const HomeCont = styled.div`
     display:flex;
     justify-content:left;
   }
-  .menu {
-    display:flex;
-    justify-content:left;
-    z-index:2;
-  }
+  
 `;
 
 
@@ -42,8 +38,9 @@ export default function Home() {
 
     
     <div className="header"><Header ></Header> </div>
-    <div className="menu"><Menu></Menu></div>
+<Filter></Filter>
     <Gallery></Gallery>
+  
     </div>
 
     

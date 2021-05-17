@@ -9,6 +9,7 @@ border-radius:  5px;
 font-size:30px;
 color: white;
 border: none;
+margin-left:100px;
 
 `;
 const Start = ({
