@@ -1,26 +1,26 @@
 import styled from 'styled-components';
-import Button from '../Button1';
-import {GiHamburgerMenu} from 'react-icons/ri'
+import Button from '../Menubutton';
+import {FiMenu} from 'react-icons/fi';
 import React, {useState} from 'react';
 
 const MenuCont = styled.div`
 `
-const MenuIcon = styled.icon`
-`;
-const Button1 = styled.div`
-`;
+const MenuIcon = styled.div``;
+const MenuItems = styled.div``;
 const Menu = ({
 
 }) => {
-    const [open, setOpen]= useState(false);
+    const [open, setOpen] = useState(false);
     return <MenuCont>
-<MenuIcon>
-<GiHamburgerMenu></GiHamburgerMenu>
-</MenuIcon>
-<Button1 ></Button1>
-text="Menu"
-bgcolor="blue"
-/>
+       <MenuIcon>
+       <FiMenu/>
+       </MenuIcon>
+        <MenuItems>
+        <Button
+        text="open me"
+        bgcolor="blue"
+        />
+        </MenuItems>
     </MenuCont>
 }
 
