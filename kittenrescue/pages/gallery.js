@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Header from '../comps/Header';
+import Menu from '../comps/Menu';
 import Gallery from '../comps/Gallery';
+
 
 
 const HomeCont = styled.div`
@@ -21,7 +23,15 @@ const HomeCont = styled.div`
     font-family: Didot;
     
   }
-
+  .header {
+    display:flex;
+    justify-content:left;
+  }
+  .menu {
+    display:flex;
+    justify-content:left;
+    z-index:2;
+  }
 `;
 
 
@@ -30,7 +40,9 @@ export default function Home() {
   
     <div className="main">
 
-    <Header></Header>
+    
+    <div className="header"><Header ></Header> </div>
+    <div className="menu"><Menu></Menu></div>
     <Gallery></Gallery>
     </div>
 
