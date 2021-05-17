@@ -17,7 +17,7 @@ const MenuButton = ({
     const router = useRouter();
     return <StartInput onClick={()=>router.push("/gallery")}>
    Gallery
-   onClick={onButtonClick}
+
 </StartInput>
     {/*<button style={{
    backgroundColor:"#FFD7F1",

@@ -1,30 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
+const ButtonCont = styled.span`
+margin:5px;
+`;
 
-const CatinfoInput = styled.div`
-background-color:#CDF2FB;
+const ButtonInput = styled.button`
+background-color:${props=>props.bg};
 border-radius:  5px;
 font-size:20px;
-color: black;
 border: none;
 width: 60px;
 height: 40px;
 font-family:Didot;
 `;
-const FilterButton = () => {
-    return <div>
-        {/*<button style={{
-       backgroundColor:"#FFD7F1",
-       color:"#FFF"
-        }}> Start</button>*/}
-        <CatinfoInput>
-       Male
+const Button = ({
+    text="Male",
+    bcolor="#AFCF68",
+    onClick=()=>{},
+}) => {
+    const router = useRouter();
+    return <ButtonCont onClick={onClick}>
+ <ButtonInput >
+  {text}
 
-        </CatinfoInput>
-    </div>
+    </ButtonInput>
+    </ButtonCont>
+    
+   
+
 }
+
+   
+
    
 
 
-export default FilterButton;
+export default Button;

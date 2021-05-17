@@ -42,8 +42,7 @@ transition:max-width 0.5s, max-height 0.5s;
 const Header1 = ({
    bigtext="Kitten Finder",
    bgcolor="#FFD7F1",
-   onButtonClick=()=>{},
-   onButton2Click=()=>{},
+  
 }) => {
    const [open, setOpen] = useState(true);
    var width = 0, height= 0;

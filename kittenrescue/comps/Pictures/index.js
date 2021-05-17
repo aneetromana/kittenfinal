@@ -36,7 +36,7 @@ const Pictures = ({
         } } src ={url} />
     </div>
     }
-   return <PicturesCont bg={bgcolor}>
+   return <PicturesCont  bg={bgcolor}>
        <Pictures>{bigtext}</Pictures>
    
        <PicturesText>{subtext}</PicturesText>

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import Button from '../Menubutton';
-import Button2 from '../Menubutton1';
-import Button3 from '../Menubutton2';
-import Button4 from '../Menubutton3';
-import {FiMenu, FiVolumeX} from 'react-icons/fi';
+import Button from '../Male1';
+import Button2 from '../Male2';
+import Button3 from '../Male4';
+import Button4 from '../Male4';
 import React, {useState} from 'react';
+import Filter from '../Filterbutton';
 import {useRouter} from 'next/router';
+
 
 const MenuCont = styled.div`
 `
@@ -21,38 +22,36 @@ transition:max-width 0.5s, max-height 0.5s;
 `;
 
 const Menu = ({
+    onButtonClick=()=>{},
+    onButton2Click=()=>{},
+    onButton3Click=()=>{},
+    onButton4Click=()=>{},
 
 }) => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     var width = 0, height= 0;
     if(open){
-        width=170;
+        width=330;
         height=100;
     }
-    const router = useRouter();
     return <MenuCont>
        <MenuIcon onClick={()=>setOpen(!open)}>
-       <FiMenu/>
+ 
+       <Filter onClick={onButtonClick}
+       />
        </MenuIcon>
         <MenuItems width={width} height={height}>
-        <Button onClick={()=>router.push("/gallery")}>
-        text="open me"
-        bgcolor="blue" 
+        <Button onClick={onButton2Click}>
         />
         </Button>
-        <Button2 onClick={()=>router.push("/homepage")}>
-        text="open me"
-        bgcolor="blue" 
+        <Button2 onClick={onButton3Click} >
         />
         </Button2>
-        <Button3 onClick={()=>router.push("/page")}>
-        text="open me"
-        bgcolor="blue" 
+        <Button3 onClick={onButton4Click}>
         />
         </Button3>
-        <Button4 onClick={()=>router.push("/aboutus")}>
-        text="open me"
-        bgcolor="blue" 
+        <Button4 onClick={onButton4Click}
+      >
         />
         </Button4>
         
