@@ -18,7 +18,7 @@ const Catinfo = () => {
        color:"#FFF"
         }}> Start</button>*/}
         <CatinfoInput>
-       Luna 
+       Luna and Paws
 
         </CatinfoInput>
     </div>

@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 import Button from '../Male1';
 import Button2 from '../Male2';
-import Button3 from '../Male4';
-import Button4 from '../Male4';
 import React, {useState} from 'react';
-import Filter from '../Filterbutton';
+import Malebuttonpicker from '../Malebuttonpicker';
 import {useRouter} from 'next/router';
 
 
@@ -22,10 +20,9 @@ transition:max-width 0.5s, max-height 0.5s;
 `;
 
 const Menu = ({
-    onButtonClick=()=>{},
-    onButton2Click=()=>{},
-    onButton3Click=()=>{},
-    onButton4Click=()=>{},
+    onAppleClick=()=>{},
+    onApple1Click=()=>{},
+    onApple4Click=()=>{},
 
 }) => {
     const [open, setOpen] = useState(false);
@@ -37,23 +34,18 @@ const Menu = ({
     return <MenuCont>
        <MenuIcon onClick={()=>setOpen(!open)}>
  
-       <Filter onClick={onButtonClick}
+       <Malebuttonpicker 
+       onClick={onAppleClick}
        />
        </MenuIcon>
         <MenuItems width={width} height={height}>
-        <Button onClick={onButton2Click}>
+        <Button onClick={onApple4Click}>
         />
         </Button>
-        <Button2 onClick={onButton3Click} >
+        <Button2 onClick={onApple1Click} >
         />
         </Button2>
-        <Button3 onClick={onButton4Click}>
-        />
-        </Button3>
-        <Button4 onClick={onButton4Click}
-      >
-        />
-        </Button4>
+       
         
         
         </MenuItems>
