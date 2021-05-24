@@ -1,25 +1,35 @@
 import styled from 'styled-components';
 import Filter from '../comps/Filterbutton';
-import Show from '../comps/Malebuttonpicker';
+import Info from '../comps/Malebuttonpicker';
+import Menu from '../comps/Menu';
 import React, {useState} from 'react';
 
+const subtexts = {
+    apple:{
+        sub:"claud and fern boy cats",
+        big:"female cats"
+    },
+}
 
 export default function Items(){
-    const [sub,setSub] = useState("female cats");
-    const [big,setBig] = useState("female male");
+    const [sub, setSub] = useState("female cats");
+    const [big, setBig] = useState("male cats ");
 
     const HandleApple = () =>{
-        setSub("luna paws");
-        setBig("boy cats");
+        setSub(subtexts.apple.sub);
+        setBig(subtexts.apple.big);
     }
    
    return <div>
-        <Filter
+       <Menu/>
+       <Filter
         onAppleClick={HandleApple} />
-        <Show
+        <Info
         subtext={sub}
         bigtext={big}
         />
 
+      
+       
     </div>
 }

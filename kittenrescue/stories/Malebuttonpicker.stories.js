@@ -9,3 +9,7 @@ export default {
 }
 
 export const MyCatinfo = () => <Malebuttonpicker />
+
+export const MyCatinfoWithCustomTexts = () => (
+<Malebuttonpicker subtext="boy kitties" />
+)

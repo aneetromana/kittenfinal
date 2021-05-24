@@ -20,6 +20,11 @@ const HomeCont = styled.div`
   background-color:#DAFFD7;
   margin-top:-180px;
 }
+.left {
+  font-size: 20px;
+  font-family: Didot;
+  margin-top:30px;
+}
 `;
 
 export default function Home() {
