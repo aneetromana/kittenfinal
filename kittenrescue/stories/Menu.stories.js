@@ -4,9 +4,9 @@ import Menu from '../comps/Menu';
 
 
 export default {
-    title:"MyMenuOpen",
-    component:<Menu  />
+    title:"MenuFilter",
+    component:<Menu />
 }
 
-export const DefaultMenu = () => <Menu  />
+export const MyStart = () => <Menu />
 

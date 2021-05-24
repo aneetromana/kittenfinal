@@ -1,11 +1,17 @@
 import React from 'react';
-import Filter from '../comps/Filterbutton';
+import Button from '../comps/Filterbutton';
 
 
 
 export default {
     title:"Search",
-    component:<Filter/>
+    component:<Button/>
 }
 
-export const SearchOptions = () => <Filter />
+export const SearchOptions = () => <Button />
+export const SearchOptionsWithCustomColor = () => <Button bgcolor="teal"/>
+export const SearchOptionsWithCustomTexts = () => (
+    <Button
+    subtext="claud and fern"
+    />
+)

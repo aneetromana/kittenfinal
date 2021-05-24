@@ -23,7 +23,7 @@ const Button = ({
     const router= useRouter();
      return <ButtonCont onClick={onClick}>
 <ButtonInput bg={bgcolor}>
-    
+    claud and fern are male cats 
 </ButtonInput>
      </ButtonCont>
 }

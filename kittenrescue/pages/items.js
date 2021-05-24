@@ -31,9 +31,13 @@ export default function Items(){
             <Pictures4>
             
             </Pictures4>
-        <Menu onButtonClick={HandleButton}>
+        <Menu>
+
 
         </Menu>
+        <Filter  onButtonClick={HandleButton}>
+
+        </Filter>
         
     </div>
 }
