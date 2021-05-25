@@ -1,8 +1,15 @@
+import styled from 'styled-components';
 import Button from '../../comps/Button1';
 import Header from '../../comps/Header';
 import {useRouter} from 'next/router';
 
-
+const HomeCont = styled.div`
+.main {
+  z-index:-1;
+  width:400px;
+  height:660px;
+  background-color:#DAFFD7;
+}`;
 var options = {
     fruits:null,
     coins:null,
@@ -61,17 +68,25 @@ if(type === "colors"){
     }
 
 
-    return <div>
-      <Header></Header>
+    return <div className="main">
+        
+          <HomeCont></HomeCont>
+          <Header></Header>
+         
+         
         <div>
         <Button bgcolor="#FAD" text="how often do cats need to be bathed?" onClick={()=>router.push("/options/fruits")}/>
         <Button bgcolor="#DAD" text="how much does an average cat cost yearly" onClick={()=>router.push("/options/coins")}/>
         <Button bgcolor="#ADD" text="do you understand the responsibility of a cat" onClick={()=>router.push("/options/colors")}/>
         </div>
+    
     Options
     <Button text={buttontexts.option1} onClick={()=>HandleClick(buttontexts.option1)} />
     <Button text={buttontexts.option2} onClick={()=>HandleClick(buttontexts.option2)} />
     <Button text={buttontexts.option3} onClick={()=>HandleClick(buttontexts.option3)} />
     <Button bgcolor="blue" text="end" onClick={HandleEnd}/>
-    </div>
+
+          </div>
+      
+          
 }

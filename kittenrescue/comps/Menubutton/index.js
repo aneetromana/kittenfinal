@@ -6,7 +6,7 @@ import {useRouter} from 'next/router';
 const StartInput = styled.button`
 background-color:#FFD7F1;
 border-radius:  5px;
-font-size:20px;
+font-size:18px;
 color: white;
 border: none;
 font-family: Didot;

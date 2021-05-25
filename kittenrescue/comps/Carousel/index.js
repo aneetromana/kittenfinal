@@ -21,7 +21,12 @@ display:flex;
 justify-content:space-between;
 `;
 
-const CtrlButtons = styled.button``;
+const CtrlButtons = styled.button`
+background-color:#FFD7F1;
+border-radius:  5px;
+font-size:20px;
+color: white;
+border: none;`;
 
 const Carousel = ({
     imgdata=default_data

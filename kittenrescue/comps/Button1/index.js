@@ -11,7 +11,7 @@ const ButtonInput = styled.button`
 background-color:${props=>props.bg};
 background-color:#FFD7F1;
 border-radius:  5px;
-font-size:25px;
+font-size:20px;
 color: white;
 border: none;
 

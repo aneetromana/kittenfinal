@@ -6,7 +6,7 @@ import {useRouter} from 'next/router';
 const MenuInput = styled.button`
 background-color:#FFD7F1;
 border-radius:  5px;
-font-size:20px;
+font-size:18px;
 color: white;
 border: none;
 font-family: Didot;
@@ -16,7 +16,7 @@ const MenuButton2 = ({
 }) => {
     const router = useRouter();
     return <MenuInput onClick={()=>router.push("/options/type")}>
-    Quiz
+    Test yourself
 </MenuInput>
     {/*<button style={{
    backgroundColor:"#FFD7F1",

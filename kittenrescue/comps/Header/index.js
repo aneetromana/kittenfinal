@@ -3,6 +3,7 @@ import Button from '../Menubutton';
 import Button2 from '../Menubutton1';
 import Button3 from '../Menubutton2';
 import Button4 from '../Menubutton3';
+import Button5 from '../Findcatbutton';
 import {FiMenu, FiVolumeX} from 'react-icons/fi';
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
@@ -14,7 +15,7 @@ const Header1Cont = styled.header`
    text-align: left;
    font-size: 40px;
    width: 400px;
-   height:110px;
+   height:140px;
    font-family: Didot;
    &>* {
        color:#FFF;
@@ -83,6 +84,11 @@ const Header1 = ({
         bgcolor="blue" 
         />
         </Button4>
+        <Button5 onClick={()=>router.push("/options/type2")}>
+        text="open me"
+        bgcolor="blue" 
+        />
+        </Button5>
         
         
         </MenuItems>
