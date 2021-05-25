@@ -1,12 +1,13 @@
 import React from 'react';
-import Menu from '../comps/Menu';
-
-
-
+import Menu from '../comps/Menu/index.js';
+ 
 export default {
-    title:"MenuFilter",
-    component:<Menu />
+   title: "Menu/Info",
+   component: <Menu />
 }
+ 
+export const MyMenu1 = () => <Menu />
 
-export const MyStart = () => <Menu />
+ 
+
 

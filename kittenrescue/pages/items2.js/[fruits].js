@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Malebuttonpicker from '../comps/Malebuttonpicker';
 import Menu from '../comps/Menu';
-import Filterbutton from '../comps/Filterbutton';
 import {useRouter} from 'next/router';
 
 const subtexts = {

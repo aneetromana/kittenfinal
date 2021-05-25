@@ -1,6 +1,5 @@
-
 import Button from '../../comps/Button1';
-import {useRouter, Router} from 'next/router';
+import {useRouter} from 'next/router';
 
 var options = {
     fruits:null,
@@ -18,22 +17,23 @@ export default function Options(){
 
 const router = useRouter();
 const {type} = router.query;
-if (type === "fruits"){
-    buttontexts.option1 = "everyday";
-    buttontexts.option2 = "2-3 days a week";
-    buttontexts.option3 = "1-2 days a week";
+
+if(type === "fruits"){
+    buttontexts.option1 = "Everyday";
+    buttontexts.option2 =  "Threedays";
+    buttontexts.option3 = "Twodays";
 }
-if (type === "coins"){
-    buttontexts.option1 = "yes";
-    buttontexts.option2 = " no";
-    buttontexts.option3 = " kind of";
+if(type === "coins"){
+    buttontexts.option1 = "Yes";
+    buttontexts.option2 = "No";
+    buttontexts.option3 = "Kindof";
 
 }
 
-if (type === "colors"){
-    buttontexts.option1 = "calm";
-    buttontexts.option2 = "adventurous ";
-    buttontexts.option3 = "independent";
+if(type === "colors"){
+    buttontexts.option1 = "Calm";
+    buttontexts.option2 = "Adventurous ";
+    buttontexts.option3 = "Independent";
 }
 
 
@@ -51,9 +51,10 @@ if (type === "colors"){
     }
     const HandleEnd = () =>{
         console.log(options);
-        sessionStorage.setItem("options", JSON.stringify(options));
+        
     //alert(fruits);
     //sessionStorage.setItem("options", fruits);
+    sessionStorage.setItem("options", JSON.stringify(options));
     router.push("/resultss")
     }
 
