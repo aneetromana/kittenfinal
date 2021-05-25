@@ -1,5 +1,6 @@
 import Header1 from '../comps/Header';
 import About from '../comps/About';
+import Carousel from '../comps/Carousel';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
@@ -21,13 +22,20 @@ const HomeCont = styled.div`
   background-color:#DAFFD7;
   margin-top:-450px;
 }
+
+
 `;
 
 export default function Home() {
   return <HomeCont>
     <div className="header"><Header1 /></div>
-    <div className="right"><About /></div>
-    <div className="background"> </div>
+    <div className="right"><About /><Carousel>
+      
+      </Carousel></div>
+    <div className="background"> 
+  
+    </div>
+    
  
 
     
