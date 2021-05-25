@@ -6,7 +6,7 @@ import {useRouter} from 'next/router';
 const MenuInput = styled.button`
 background-color:#FFD7F1;
 border-radius:  5px;
-font-size:30px;
+font-size:18px;
 color: white;
 border: none;
 display:flex;
@@ -24,7 +24,7 @@ border: none;
 const MenuInput3 = styled.button`
 background-color:#FFD7F1;
 border-radius:  18px;
-font-size:30px;
+font-size:18px;
 color: white;
 border: none;
 
@@ -32,7 +32,7 @@ border: none;
 const MenuInput4 = styled.button`
 background-color:#FFD7F1;
 border-radius:  18px;
-font-size:30px;
+font-size:18px;
 color: white;
 border: none;
 

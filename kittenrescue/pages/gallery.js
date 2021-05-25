@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Header from '../comps/Header';
 import Gallery from '../comps/Gallery';
-import Filter from '../comps/Filterbutton';
+
 
 
 
@@ -38,7 +38,7 @@ export default function Home() {
 
     
     <div className="header"><Header ></Header> </div>
-<Filter></Filter>
+
     <Gallery></Gallery>
   
     </div>
