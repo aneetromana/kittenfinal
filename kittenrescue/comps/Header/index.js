@@ -73,7 +73,7 @@ const Header1 = ({
        
         />
         </Button2>
-        <Button3 onClick={()=>router.push("/page")}>
+        <Button3 onClick={()=>router.push("/options/type")}>
         text="open me"
         bgcolor="blue" 
         />

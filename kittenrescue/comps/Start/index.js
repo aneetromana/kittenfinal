@@ -15,7 +15,7 @@ margin-left:100px;
 const Start = ({
 }) => {
     const router = useRouter();
-    return <StartInput onClick={()=>router.push("/page")}>
+    return <StartInput onClick={()=>router.push("/options/type")}>
     Start
 </StartInput>
     {/*<button style={{

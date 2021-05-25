@@ -1,5 +1,7 @@
 import Button from '../../comps/Button1';
+import Header from '../../comps/Header';
 import {useRouter} from 'next/router';
+
 
 var options = {
     fruits:null,
@@ -20,20 +22,20 @@ const {type} = router.query;
 
 if(type === "fruits"){
     buttontexts.option1 = "Everyday";
-    buttontexts.option2 =  "Threedays";
-    buttontexts.option3 = "Twodays";
+    buttontexts.option2 = "Thirtydays";
+    buttontexts.option3 = "Onceyear";
 }
 if(type === "coins"){
-    buttontexts.option1 = "Yes";
-    buttontexts.option2 = "No";
-    buttontexts.option3 = "Kindof";
+    buttontexts.option1 = "$500";
+    buttontexts.option2 = "$1000";
+    buttontexts.option3 = "Depends";
 
 }
 
 if(type === "colors"){
-    buttontexts.option1 = "Calm";
-    buttontexts.option2 = "Adventurous ";
-    buttontexts.option3 = "Independent";
+    buttontexts.option1 = "Yes";
+    buttontexts.option2 = "No ";
+    buttontexts.option3 = "Notsure";
 }
 
 
@@ -60,17 +62,16 @@ if(type === "colors"){
 
 
     return <div>
+      <Header></Header>
         <div>
-        <Button bgcolor="#FAD" text="how often are you home?" onClick={()=>router.push("/options/fruits")}/>
-        <Button bgcolor="#DAD" text="are you comfortable with cats" onClick={()=>router.push("/options/coins")}/>
-        <Button bgcolor="#ADD" text="what kind of cat are you looking for?" onClick={()=>router.push("/options/colors")}/>
+        <Button bgcolor="#FAD" text="how often do cats need to be bathed?" onClick={()=>router.push("/options/fruits")}/>
+        <Button bgcolor="#DAD" text="how much does an average cat cost yearly" onClick={()=>router.push("/options/coins")}/>
+        <Button bgcolor="#ADD" text="do you understand the responsibility of a cat" onClick={()=>router.push("/options/colors")}/>
         </div>
     Options
-    <Button text={buttontexts.option1} onClick={()=>HandleClick(buttontexts.option1)}/>
-    <Button text={buttontexts.option2} onClick={()=>HandleClick(buttontexts.option2)}/>
-    <Button text={buttontexts.option3} onClick={()=>HandleClick(buttontexts.option3)}/>
+    <Button text={buttontexts.option1} onClick={()=>HandleClick(buttontexts.option1)} />
+    <Button text={buttontexts.option2} onClick={()=>HandleClick(buttontexts.option2)} />
+    <Button text={buttontexts.option3} onClick={()=>HandleClick(buttontexts.option3)} />
     <Button bgcolor="blue" text="end" onClick={HandleEnd}/>
-
-
     </div>
 }

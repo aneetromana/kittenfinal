@@ -15,7 +15,7 @@ font-family: Didot;
 const MenuButton2 = ({
 }) => {
     const router = useRouter();
-    return <MenuInput onClick={()=>router.push("/page")}>
+    return <MenuInput onClick={()=>router.push("/options/type")}>
     Quiz
 </MenuInput>
     {/*<button style={{
